@@ -1,0 +1,169 @@
+:root{
+    --vermelho: #e50914;
+    --preta:    #141414;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*Elementos base*/
+body {
+    background: var(--preta);
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
+header .container{
+    display: flex; 
+/*flex box serve para alinhar elementos em tela*/
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    font-size: 25px;
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 20px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*Filme Principal*/
+.filme-principal {
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    /*Flex-direction alinha verticalmente*/
+    flex-direction: column;
+    justify-content: center;
+    /*align-items alinha horizontalmente*/
+    align-items: flex-start;
+
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top:5%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+    font-weight: bold;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+margin-right: 8px;
+}
+
+/* Aula PARTE 6 */
+/* # WRAPPER significa ENVELOPAR */
+
+.container {
+    margin-left: 30px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes {
+    margin-top: 5px;
+}
+
+.item {
+    cursor: pointer;
+}
+
+.item:hover {
+    
+    transition-duration: 0.3s;
+    margin-top: -5px;
+}
+
+.botao-entrar{
+    margin:0;
+    float: right;
+    
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.entrar {
+    line-height: normal;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 7px 17px;
+    color: white;
+    background: red;
+    margin: 20px;
+    float: right;
+    
+}
+.botao-entrar a{
+    text-decoration: none;
+}
+
+.cred{
+    text-align: center;
+    justify-content: start;
+    padding-left: 20px;
+}
+.cred a{
+    text-decoration: none;
+    color: white;
+    
+}
+.cred a:hover{
+    color: red;
+
+}
+
+
+
+
